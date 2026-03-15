@@ -501,3 +501,49 @@ django.template.exceptions.TemplateDoesNotExist: shop/wishlist.html
 [15/Mar/2026 19:45:47] "GET /media/products/gown.png HTTP/1.1" 304 0
 [15/Mar/2026 19:45:47] "GET /media/products/party_gown_heavy.jpg HTTP/1.1" 304 0
 [15/Mar/2026 19:45:47] "GET /media/products/gold_choker_set.jpg HTTP/1.1" 304 0
+C:\Users\shabb\OneDrive\Desktop\shopping_platform\shop\views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 15, 2026 - 18:13:40
+Django version 4.2.29, using settings 'saba_kausar_platform.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CTRL-BREAK.
+
+Watching for file changes with StatReloader
+[15/Mar/2026 20:31:09] "GET / HTTP/1.1" 200 36568
+[15/Mar/2026 20:31:09] "GET /media/products/gown.png HTTP/1.1" 304 0
+[15/Mar/2026 20:31:09] "GET /media/products/princess_pink_frock.jpg HTTP/1.1" 304 0
+[15/Mar/2026 20:31:09] "GET /media/products/tiny_jewels_bracelet.jpg HTTP/1.1" 304 0
+[15/Mar/2026 20:31:09] "GET /media/products/floral_hair_band.jpg HTTP/1.1" 304 0
+[15/Mar/2026 20:31:09] "GET /media/products/diamond_necklace.jpg HTTP/1.1" 304 0
+[15/Mar/2026 20:31:09] "GET /media/products/designer_kurti_set.jpg HTTP/1.1" 304 0
+[15/Mar/2026 20:31:09] "GET /media/products/party_gown_heavy.jpg HTTP/1.1" 304 0
+[15/Mar/2026 20:31:09] "GET /media/products/gold_choker_set.jpg HTTP/1.1" 304 0
+[15/Mar/2026 20:31:09] "GET /media/products/chic_denim_skirt.jpg HTTP/1.1" 304 0
+[15/Mar/2026 20:31:38] "GET / HTTP/1.1" 200 36568
+Internal Server Error: /wishlist/
+Traceback (most recent call last):
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\shop\views.py", line 69, in wishlist_detail
+    return render(request, 'shop/wishlist.html', {'wishlist_items': wishlist_items})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: shop/wishlist.html
+[15/Mar/2026 20:31:41] "GET /wishlist/ HTTP/1.1" 500 91925
+[15/Mar/2026 20:31:48] "GET /orders/cart/ HTTP/1.1" 200 7499

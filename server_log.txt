@@ -547,3 +547,24 @@ Traceback (most recent call last):
 django.template.exceptions.TemplateDoesNotExist: shop/wishlist.html
 [15/Mar/2026 20:31:41] "GET /wishlist/ HTTP/1.1" 500 91925
 [15/Mar/2026 20:31:48] "GET /orders/cart/ HTTP/1.1" 200 7499
+[15/Mar/2026 20:37:21] "GET / HTTP/1.1" 302 0
+[15/Mar/2026 20:37:21] "GET /accounts/login/?next=/ HTTP/1.1" 200 8213
+[15/Mar/2026 20:37:21] "GET /static/images/sk_logo.svg HTTP/1.1" 200 880
+Not Found: /favicon.ico
+[15/Mar/2026 20:37:22] "GET /favicon.ico HTTP/1.1" 404 4330
+[15/Mar/2026 20:37:37] "POST /accounts/login/?next=/ HTTP/1.1" 200 8411
+[15/Mar/2026 20:37:43] "GET /accounts/signup/ HTTP/1.1" 200 9201
+[15/Mar/2026 20:38:02] "POST /accounts/signup/ HTTP/1.1" 200 9558
+[15/Mar/2026 20:38:25] "POST /accounts/signup/ HTTP/1.1" 302 0
+[15/Mar/2026 20:38:25] "GET / HTTP/1.1" 200 36568
+[15/Mar/2026 20:38:25] "GET /media/products/princess_pink_frock.jpg HTTP/1.1" 200 409441
+[15/Mar/2026 20:38:25] "GET /media/products/gown.png HTTP/1.1" 200 987293
+[15/Mar/2026 20:38:25] "GET /media/products/tiny_jewels_bracelet.jpg HTTP/1.1" 200 170825
+[15/Mar/2026 20:38:25] "GET /media/products/gold_choker_set.jpg HTTP/1.1" 200 74882
+[15/Mar/2026 20:38:25] "GET /media/products/floral_hair_band.jpg HTTP/1.1" 200 557222
+[15/Mar/2026 20:38:25] "GET /media/products/chic_denim_skirt.jpg HTTP/1.1" 200 303229
+[15/Mar/2026 20:38:25] "GET /media/products/lehenga.png HTTP/1.1" 200 589106
+[15/Mar/2026 20:38:25] "GET /media/products/diamond_necklace.jpg HTTP/1.1" 200 564547
+[15/Mar/2026 20:38:25] "GET /media/products/party_gown_heavy.jpg HTTP/1.1" 200 209738
+[15/Mar/2026 20:38:25] "GET /static/images/main_banner.png HTTP/1.1" 200 489665
+[15/Mar/2026 20:38:25] "GET /media/products/designer_kurti_set.jpg HTTP/1.1" 200 1065428

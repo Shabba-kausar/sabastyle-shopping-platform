@@ -1,6 +1,6 @@
 # SabaStyle – Women's Fashion Shopping Platform
 
-SabaStyle is a modern fashion e-commerce platform built using Python and Django. It allows users to explore and shop stylish products including western wear, traditional wear, jewellery, makeup products, and children's fashion collections.
+**SabaStyle** is a premium women's and children's fashion e-commerce platform built with Django. It features trending collections, secure UPI payments, personalized branding, and a modern, secure shopping experience designed for the contemporary user.
 
 ## Key Features
 * **User Registration and Login**: Visitors must authenticate to browse the platform.

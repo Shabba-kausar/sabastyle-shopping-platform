@@ -1,0 +1,503 @@
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\shop\views.py", line 11, in home
+    return render(request, 'shop/home.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'wishlist' not found. 'wishlist' is not a valid view function or pattern name.
+[14/Mar/2026 22:07:54] "HEAD / HTTP/1.1" 500 0
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\shop\views.py", line 11, in home
+    return render(request, 'shop/home.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'wishlist' not found. 'wishlist' is not a valid view function or pattern name.
+[14/Mar/2026 22:07:54] "GET / HTTP/1.1" 500 164291
+[14/Mar/2026 22:08:08] "HEAD / HTTP/1.1" 200 0
+[14/Mar/2026 22:08:08] "GET / HTTP/1.1" 200 31367
+C:\Users\shabb\OneDrive\Desktop\shopping_platform\shop\views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 14, 2026 - 22:07:37
+Django version 4.2.29, using settings 'saba_kausar_platform.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CTRL-BREAK.
+
+Watching for file changes with StatReloader
+[14/Mar/2026 22:39:19] "HEAD /products/?search=Jewellery HTTP/1.1" 200 0
+[14/Mar/2026 22:39:19] "GET /products/?search=Jewellery HTTP/1.1" 200 11647
+[14/Mar/2026 22:39:20] "HEAD /products/?search=Child HTTP/1.1" 200 0
+[14/Mar/2026 22:39:20] "GET /products/?search=Child HTTP/1.1" 200 8947
+C:\Users\shabb\OneDrive\Desktop\shopping_platform\shop\views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 14, 2026 - 22:38:27
+Django version 4.2.29, using settings 'saba_kausar_platform.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CTRL-BREAK.
+
+Watching for file changes with StatReloader
+[15/Mar/2026 16:56:18] "GET / HTTP/1.1" 200 31367
+[15/Mar/2026 16:56:19] "GET /static/images/sk_logo.svg HTTP/1.1" 200 880
+[15/Mar/2026 16:56:19] "GET /media/products/gown.png HTTP/1.1" 200 518673
+[15/Mar/2026 16:56:19] "GET /static/images/main_banner.png HTTP/1.1" 200 489665
+[15/Mar/2026 16:56:19] "GET /media/products/lehenga.png HTTP/1.1" 200 589106
+Not Found: /favicon.ico
+[15/Mar/2026 16:56:21] "GET /favicon.ico HTTP/1.1" 404 4330
+[15/Mar/2026 16:57:17] "GET /products/?search=jewellery HTTP/1.1" 200 11647
+[15/Mar/2026 16:57:18] "GET /media/products/necklace.png HTTP/1.1" 200 635192
+[15/Mar/2026 16:57:28] "GET / HTTP/1.1" 200 31367
+[15/Mar/2026 16:58:11] "GET / HTTP/1.1" 200 31367
+[15/Mar/2026 16:58:15] "GET /products/women/ HTTP/1.1" 200 20875
+[15/Mar/2026 16:58:15] "GET /media/products/makeup.png HTTP/1.1" 200 579055
+[15/Mar/2026 16:58:25] "GET /about/ HTTP/1.1" 200 6903
+[15/Mar/2026 16:58:43] "GET /products/child/ HTTP/1.1" 200 13155
+[15/Mar/2026 16:58:50] "GET /products/western-collection/ HTTP/1.1" 200 11635
+[15/Mar/2026 16:58:56] "GET / HTTP/1.1" 200 31367
+[15/Mar/2026 16:58:58] "GET /products/women/ HTTP/1.1" 200 20875
+[15/Mar/2026 16:58:59] "GET / HTTP/1.1" 200 31367
+[15/Mar/2026 16:59:01] "GET /products/women/ HTTP/1.1" 200 20875
+[15/Mar/2026 16:59:09] "GET /products/kids-accessories/ HTTP/1.1" 200 11616
+[15/Mar/2026 16:59:14] "GET /products/kids-dresses/ HTTP/1.1" 200 10071
+[15/Mar/2026 16:59:18] "GET /products/makeup-products/ HTTP/1.1" 200 11623
+[15/Mar/2026 16:59:22] "GET /products/traditional-collection/ HTTP/1.1" 200 11646
+[15/Mar/2026 16:59:25] "GET /products/western-collection/ HTTP/1.1" 200 11635
+[15/Mar/2026 16:59:27] "GET /products/ HTTP/1.1" 200 25435
+[15/Mar/2026 17:40:27] "GET / HTTP/1.1" 200 31601
+[15/Mar/2026 17:40:29] "GET /media/products/tiny_jewels_bracelet.jpg HTTP/1.1" 200 170825
+[15/Mar/2026 17:40:30] "GET /media/products/princess_pink_frock.jpg HTTP/1.1" 200 409441
+[15/Mar/2026 17:40:30] "GET /media/products/floral_hair_band.jpg HTTP/1.1" 200 557222
+[15/Mar/2026 17:40:30] "GET /media/products/diamond_necklace.jpg HTTP/1.1" 200 564547
+[15/Mar/2026 17:40:30] "GET /media/products/chic_denim_skirt.jpg HTTP/1.1" 200 303229
+[15/Mar/2026 17:40:30] "GET /media/products/designer_kurti_set.jpg HTTP/1.1" 200 1065428
+[15/Mar/2026 17:40:42] "GET / HTTP/1.1" 200 31601
+[15/Mar/2026 17:40:43] "GET /media/products/princess_pink_frock.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:40:43] "GET /media/products/tiny_jewels_bracelet.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:40:43] "GET /media/products/floral_hair_band.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:40:43] "GET /media/products/diamond_necklace.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:40:43] "GET /media/products/chic_denim_skirt.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:40:43] "GET /media/products/designer_kurti_set.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:45:27] "GET /products/women/ HTTP/1.1" 200 21025
+[15/Mar/2026 17:45:28] "GET /media/products/chic_denim_skirt.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:45:28] "GET /media/products/designer_kurti_set.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:45:28] "GET /media/products/diamond_necklace.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:45:28] "GET /media/products/velvet_foundation.jpg HTTP/1.1" 200 378239
+[15/Mar/2026 17:46:38] "GET /product/8/velvet-foundation/ HTTP/1.1" 200 8041
+[15/Mar/2026 17:46:38] "GET /media/products/velvet_foundation.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:48:13] "GET /products/child/ HTTP/1.1" 200 13275
+[15/Mar/2026 17:48:14] "GET /media/products/princess_pink_frock.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:48:14] "GET /media/products/tiny_jewels_bracelet.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:48:14] "GET /media/products/floral_hair_band.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:48:47] "GET /product/9/princess-pink-frock/ HTTP/1.1" 200 8045
+[15/Mar/2026 17:49:08] "GET /products/ HTTP/1.1" 200 25705
+[15/Mar/2026 17:49:08] "GET /media/products/chic_denim_skirt.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:49:08] "GET /media/products/designer_kurti_set.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:49:08] "GET /media/products/diamond_necklace.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:49:08] "GET /media/products/velvet_foundation.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:49:08] "GET /media/products/tiny_jewels_bracelet.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:49:09] "GET /media/products/princess_pink_frock.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:49:09] "GET /media/products/floral_hair_band.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:50:26] "GET /products/?search=jwellary HTTP/1.1" 200 8950
+[15/Mar/2026 17:51:13] "GET /products/ HTTP/1.1" 200 25705
+[15/Mar/2026 17:51:14] "GET /media/products/diamond_necklace.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:51:14] "GET /media/products/designer_kurti_set.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:51:14] "GET /media/products/chic_denim_skirt.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:51:14] "GET /media/products/floral_hair_band.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:51:14] "GET /media/products/velvet_foundation.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:51:14] "GET /media/products/princess_pink_frock.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:51:15] "GET /media/products/tiny_jewels_bracelet.jpg HTTP/1.1" 304 0
+Not Found: /products/list/
+[15/Mar/2026 17:55:39] "GET /products/list/?category=child HTTP/1.1" 404 3458
+[15/Mar/2026 17:56:14] "GET /products/child/ HTTP/1.1" 200 13275
+[15/Mar/2026 17:56:16] "GET /media/products/princess_pink_frock.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:56:16] "GET /media/products/floral_hair_band.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:56:16] "GET /media/products/tiny_jewels_bracelet.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:58:26] "GET / HTTP/1.1" 200 31601
+[15/Mar/2026 17:58:27] "GET /media/products/princess_pink_frock.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:58:27] "GET /media/products/floral_hair_band.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:58:27] "GET /media/products/tiny_jewels_bracelet.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:58:27] "GET /media/products/diamond_necklace.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:58:27] "GET /media/products/chic_denim_skirt.jpg HTTP/1.1" 304 0
+[15/Mar/2026 17:58:27] "GET /media/products/designer_kurti_set.jpg HTTP/1.1" 304 0
+[15/Mar/2026 18:02:45] "GET / HTTP/1.1" 200 31601
+[15/Mar/2026 18:02:45] "GET /media/products/princess_pink_frock.jpg HTTP/1.1" 304 0
+[15/Mar/2026 18:02:45] "GET /media/products/floral_hair_band.jpg HTTP/1.1" 304 0
+[15/Mar/2026 18:02:45] "GET /media/products/chic_denim_skirt.jpg HTTP/1.1" 304 0
+[15/Mar/2026 18:02:45] "GET /media/products/tiny_jewels_bracelet.jpg HTTP/1.1" 304 0
+[15/Mar/2026 18:02:45] "GET /media/products/diamond_necklace.jpg HTTP/1.1" 304 0
+[15/Mar/2026 18:02:45] "GET /media/products/designer_kurti_set.jpg HTTP/1.1" 304 0
+[15/Mar/2026 18:02:54] "GET /products/women/ HTTP/1.1" 200 21025
+[15/Mar/2026 18:02:55] "GET /media/products/velvet_foundation.jpg HTTP/1.1" 304 0
+[15/Mar/2026 18:03:14] "GET /product/2/chic-denim-skirt/ HTTP/1.1" 200 8049
+[15/Mar/2026 18:03:39] "GET /product/4/designer-kurti-set/ HTTP/1.1" 200 8062
+[15/Mar/2026 18:03:52] "GET /product/4/designer-kurti-set/ HTTP/1.1" 200 8062
+[15/Mar/2026 18:03:56] "GET /products/ HTTP/1.1" 200 25705
+[15/Mar/2026 18:04:20] "GET /products/western-collection/ HTTP/1.1" 200 11669
+[15/Mar/2026 18:04:47] "GET /products/traditional-collection/ HTTP/1.1" 200 11684
+[15/Mar/2026 18:05:10] "GET /products/?search=childi HTTP/1.1" 200 8948
+[15/Mar/2026 18:05:17] "GET /products/?search=jawellery HTTP/1.1" 200 8951
+C:\Users\shabb\OneDrive\Desktop\shopping_platform\shop\models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 14, 2026 - 22:39:38
+Django version 4.2.29, using settings 'saba_kausar_platform.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CTRL-BREAK.
+
+Watching for file changes with StatReloader
+C:\Users\shabb\OneDrive\Desktop\shopping_platform\shop\views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 15, 2026 - 18:12:19
+Django version 4.2.29, using settings 'saba_kausar_platform.settings'
+Starting development server at http://0.0.0.0:8001/
+Quit the server with CTRL-BREAK.
+
+Watching for file changes with StatReloader
+[15/Mar/2026 18:51:39] "GET / HTTP/1.1" 200 34947
+[15/Mar/2026 18:51:40] "GET /media/products/floral_hair_band.jpg HTTP/1.1" 304 0
+[15/Mar/2026 18:51:40] "GET /media/products/princess_pink_frock.jpg HTTP/1.1" 304 0
+[15/Mar/2026 18:51:40] "GET /media/products/tiny_jewels_bracelet.jpg HTTP/1.1" 304 0
+[15/Mar/2026 18:51:40] "GET /media/products/diamond_necklace.jpg HTTP/1.1" 304 0
+[15/Mar/2026 18:51:40] "GET /media/products/chic_denim_skirt.jpg HTTP/1.1" 304 0
+[15/Mar/2026 18:51:40] "GET /media/products/designer_kurti_set.jpg HTTP/1.1" 304 0
+[15/Mar/2026 18:51:41] "GET /media/products/gold_choker_set.jpg HTTP/1.1" 200 74882
+[15/Mar/2026 18:51:41] "GET /media/products/party_gown_heavy.jpg HTTP/1.1" 200 209738
+[15/Mar/2026 18:52:21] "GET /products/?search=awellery HTTP/1.1" 200 16393
+[15/Mar/2026 18:52:21] "GET /media/products/silver_nose_pin.jpg HTTP/1.1" 200 258995
+[15/Mar/2026 18:52:22] "GET /media/products/gold_choker_set.jpg HTTP/1.1" 304 0
+[15/Mar/2026 18:52:22] "GET /media/products/crystal_ring.jpg HTTP/1.1" 200 112427
+[15/Mar/2026 18:52:52] "GET /products/?search=jawellery HTTP/1.1" 200 16394
+[15/Mar/2026 18:52:53] "GET /media/products/silver_nose_pin.jpg HTTP/1.1" 304 0
+[15/Mar/2026 18:52:53] "GET /media/products/gold_choker_set.jpg HTTP/1.1" 304 0
+[15/Mar/2026 18:52:53] "GET /media/products/crystal_ring.jpg HTTP/1.1" 304 0
+[15/Mar/2026 18:59:45] "GET /products/makeup-products/ HTTP/1.1" 200 16388
+[15/Mar/2026 18:59:46] "GET /static/images/sk_logo.svg HTTP/1.1" 304 0
+[15/Mar/2026 18:59:47] "GET /media/products/velvet_foundation.jpg HTTP/1.1" 304 0
+[15/Mar/2026 18:59:47] "GET /media/products/eyeshadow_palette_pro.jpg HTTP/1.1" 200 79491
+[15/Mar/2026 18:59:47] "GET /media/products/intense_kajal.jpg HTTP/1.1" 200 108687
+[15/Mar/2026 18:59:47] "GET /media/products/matte_nail_enamel.jpg HTTP/1.1" 200 32066
+[15/Mar/2026 19:01:18] "GET / HTTP/1.1" 200 34947
+[15/Mar/2026 19:01:20] "GET /media/products/floral_hair_band.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:01:20] "GET /media/products/princess_pink_frock.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:01:20] "GET /media/products/lehenga.png HTTP/1.1" 304 0
+[15/Mar/2026 19:01:20] "GET /media/products/tiny_jewels_bracelet.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:01:20] "GET /media/products/diamond_necklace.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:01:20] "GET /media/products/designer_kurti_set.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:01:20] "GET /media/products/party_gown_heavy.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:01:20] "GET /media/products/gold_choker_set.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:01:20] "GET /media/products/chic_denim_skirt.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:01:20] "GET /media/products/gown.png HTTP/1.1" 200 987293
+[15/Mar/2026 19:01:44] "GET / HTTP/1.1" 200 34947
+[15/Mar/2026 19:01:46] "GET /static/images/main_banner.png HTTP/1.1" 304 0
+[15/Mar/2026 19:04:37] "GET /contact/ HTTP/1.1" 200 7973
+[15/Mar/2026 19:04:59] "GET / HTTP/1.1" 200 34947
+[15/Mar/2026 19:04:59] "GET /media/products/gold_choker_set.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:04:59] "GET /media/products/party_gown_heavy.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:05:04] "GET / HTTP/1.1" 200 34947
+[15/Mar/2026 19:05:08] "GET /products/women/ HTTP/1.1" 200 35201
+[15/Mar/2026 19:05:09] "GET /media/products/makeup.png HTTP/1.1" 304 0
+[15/Mar/2026 19:05:09] "GET /media/products/necklace.png HTTP/1.1" 304 0
+[15/Mar/2026 19:05:09] "GET /media/products/silver_nose_pin.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:05:09] "GET /media/products/crystal_ring.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:05:09] "GET /media/products/matte_nail_enamel.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:05:09] "GET /media/products/eyeshadow_palette_pro.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:05:09] "GET /media/products/intense_kajal.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:05:09] "GET /media/products/floral_crop_top.jpg HTTP/1.1" 200 162942
+[15/Mar/2026 19:05:09] "GET /media/products/printed_kurti.jpg HTTP/1.1" 200 336267
+[15/Mar/2026 19:06:16] "GET /products/child/ HTTP/1.1" 200 14831
+[15/Mar/2026 19:06:18] "GET /products/child/ HTTP/1.1" 200 14831
+[15/Mar/2026 19:06:18] "GET /products/child/ HTTP/1.1" 200 14831
+[15/Mar/2026 19:06:18] "GET /products/child/ HTTP/1.1" 200 14831
+[15/Mar/2026 19:06:19,262] - Broken pipe from ('127.0.0.1', 61579)
+[15/Mar/2026 19:06:19] "GET /media/products/baby_cotton_frock.jpg HTTP/1.1" 200 204271
+[15/Mar/2026 19:06:30] "GET /products/ HTTP/1.1" 200 41436
+[15/Mar/2026 19:06:30] "GET /media/products/party_gown_heavy.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:06:30] "GET /media/products/gold_choker_set.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:06:44] "GET /products/western-collection/ HTTP/1.1" 200 14839
+[15/Mar/2026 19:06:44] "GET /media/products/floral_crop_top.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:06:51] "GET /products/traditional-collection/ HTTP/1.1" 200 13255
+[15/Mar/2026 19:06:51] "GET /media/products/printed_kurti.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:07:17] "GET /products/jewellery/ HTTP/1.1" 200 16370
+[15/Mar/2026 19:07:18] "GET /media/products/crystal_ring.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:07:18] "GET /media/products/silver_nose_pin.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:07:30] "GET /products/makeup-products/ HTTP/1.1" 200 16388
+[15/Mar/2026 19:07:30] "GET /media/products/intense_kajal.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:07:30] "GET /media/products/eyeshadow_palette_pro.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:07:30] "GET /media/products/matte_nail_enamel.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:07:36] "GET /products/kids-dresses/ HTTP/1.1" 200 11667
+[15/Mar/2026 19:07:40] "GET /products/kids-accessories/ HTTP/1.1" 200 11696
+[15/Mar/2026 19:22:49] "GET /contact/ HTTP/1.1" 200 8970
+[15/Mar/2026 19:23:09] "GET /about/ HTTP/1.1" 200 7836
+[15/Mar/2026 19:23:36] "GET /products/?search=jwellary HTTP/1.1" 200 9883
+[15/Mar/2026 19:23:49] "GET /products/ HTTP/1.1" 200 42369
+[15/Mar/2026 19:23:49] "GET /media/products/chic_denim_skirt.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:23:49] "GET /media/products/gown.png HTTP/1.1" 304 0
+[15/Mar/2026 19:23:49] "GET /media/products/diamond_necklace.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:23:49] "GET /media/products/designer_kurti_set.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:23:49] "GET /media/products/velvet_foundation.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:23:49] "GET /media/products/princess_pink_frock.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:23:49] "GET /media/products/silver_nose_pin.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:23:49] "GET /media/products/tiny_jewels_bracelet.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:23:49] "GET /media/products/printed_kurti.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:23:49] "GET /media/products/floral_hair_band.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:23:49] "GET /media/products/gold_choker_set.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:23:49] "GET /media/products/party_gown_heavy.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:23:49] "GET /media/products/floral_crop_top.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:23:49] "GET /media/products/eyeshadow_palette_pro.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:23:49] "GET /media/products/intense_kajal.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:23:49] "GET /media/products/crystal_ring.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:23:49] "GET /media/products/baby_cotton_frock.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:23:49] "GET /media/products/matte_nail_enamel.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:23:53] "GET /products/western-collection/ HTTP/1.1" 200 15772
+[15/Mar/2026 19:24:06] "GET /products/ HTTP/1.1" 200 42369
+[15/Mar/2026 19:24:30] "GET /orders/cart/add/19/ HTTP/1.1" 302 0
+[15/Mar/2026 19:24:31] "GET /orders/cart/ HTTP/1.1" 200 11617
+[15/Mar/2026 19:24:45] "GET /orders/checkout/ HTTP/1.1" 200 9214
+[15/Mar/2026 19:26:10] "POST /orders/checkout/ HTTP/1.1" 200 8125
+[15/Mar/2026 19:27:11] "GET /products/ HTTP/1.1" 200 42369
+[15/Mar/2026 19:27:11] "GET /media/products/silver_nose_pin.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:27:11] "GET /media/products/party_gown_heavy.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:27:11] "GET /media/products/printed_kurti.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:27:11] "GET /media/products/gold_choker_set.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:27:11] "GET /media/products/crystal_ring.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:27:11] "GET /media/products/intense_kajal.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:27:11] "GET /media/products/matte_nail_enamel.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:27:11] "GET /media/products/eyeshadow_palette_pro.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:27:11] "GET /media/products/baby_cotton_frock.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:27:11] "GET /media/products/floral_crop_top.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:28:04] "GET /admin HTTP/1.1" 301 0
+[15/Mar/2026 19:28:04] "GET /admin/ HTTP/1.1" 302 0
+[15/Mar/2026 19:28:05] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+[15/Mar/2026 19:28:05] "GET /static/admin/css/login.css HTTP/1.1" 200 958
+[15/Mar/2026 19:28:05] "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+[15/Mar/2026 19:28:05] "GET /static/admin/css/base.css HTTP/1.1" 200 21310
+[15/Mar/2026 19:28:05] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+[15/Mar/2026 19:28:05] "GET /static/admin/css/responsive.css HTTP/1.1" 200 18559
+[15/Mar/2026 19:28:05] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[15/Mar/2026 19:28:05] "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+[15/Mar/2026 19:28:47] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4343
+[15/Mar/2026 19:31:47] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[15/Mar/2026 19:31:47] "GET /admin/ HTTP/1.1" 200 7688
+[15/Mar/2026 19:31:47] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[15/Mar/2026 19:31:47] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[15/Mar/2026 19:31:47] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[15/Mar/2026 19:32:04] "GET /admin/orders/order/ HTTP/1.1" 200 14231
+[15/Mar/2026 19:32:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[15/Mar/2026 19:32:04] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+[15/Mar/2026 19:32:04] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[15/Mar/2026 19:32:04] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+[15/Mar/2026 19:32:04] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[15/Mar/2026 19:32:04] "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+[15/Mar/2026 19:32:04] "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+[15/Mar/2026 19:32:04] "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+[15/Mar/2026 19:32:04] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+[15/Mar/2026 19:32:04] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+[15/Mar/2026 19:32:04] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[15/Mar/2026 19:32:04] "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+[15/Mar/2026 19:32:04] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[15/Mar/2026 19:32:04] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[15/Mar/2026 19:32:37] "POST /admin/orders/order/ HTTP/1.1" 302 0
+[15/Mar/2026 19:32:38] "GET /admin/orders/order/ HTTP/1.1" 200 14424
+[15/Mar/2026 19:32:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[15/Mar/2026 19:32:38] "GET /static/admin/img/icon-alert.svg HTTP/1.1" 200 504
+[15/Mar/2026 19:32:53] "POST /admin/orders/order/ HTTP/1.1" 302 0
+[15/Mar/2026 19:32:54] "GET /admin/orders/order/ HTTP/1.1" 200 14356
+[15/Mar/2026 19:32:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[15/Mar/2026 19:33:03] "GET /admin/orders/ HTTP/1.1" 200 5055
+[15/Mar/2026 19:33:08] "GET /admin/orders/order/ HTTP/1.1" 200 14231
+[15/Mar/2026 19:33:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[15/Mar/2026 19:33:09] "GET /admin/auth/group/ HTTP/1.1" 200 8865
+[15/Mar/2026 19:33:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[15/Mar/2026 19:33:09] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[15/Mar/2026 19:33:12] "GET /admin/auth/user/ HTTP/1.1" 200 12077
+[15/Mar/2026 19:33:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[15/Mar/2026 19:33:12] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[15/Mar/2026 19:33:19] "GET /admin/shop/ HTTP/1.1" 200 5892
+[15/Mar/2026 19:33:23] "GET /admin/shop/product/ HTTP/1.1" 200 33715
+[15/Mar/2026 19:33:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[15/Mar/2026 19:33:23] "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+[15/Mar/2026 19:33:23] "GET /static/admin/css/widgets.css HTTP/1.1" 200 11921
+[15/Mar/2026 19:33:50] "POST /admin/shop/product/ HTTP/1.1" 302 0
+[15/Mar/2026 19:33:50] "GET /admin/shop/product/ HTTP/1.1" 200 33858
+[15/Mar/2026 19:33:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[15/Mar/2026 19:34:08] "GET /admin/shop/product/add/ HTTP/1.1" 200 18545
+[15/Mar/2026 19:34:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[15/Mar/2026 19:34:08] "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+[15/Mar/2026 19:34:08] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[15/Mar/2026 19:34:08] "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[15/Mar/2026 19:34:22] "GET /admin/shop/product/ HTTP/1.1" 200 33715
+[15/Mar/2026 19:34:28] "GET /admin/shop/category/ HTTP/1.1" 200 11173
+[15/Mar/2026 19:34:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[15/Mar/2026 19:34:36] "GET /admin/auth/ HTTP/1.1" 200 5577
+[15/Mar/2026 19:34:39] "GET /admin/shop/category/ HTTP/1.1" 200 11173
+[15/Mar/2026 19:35:14] "GET / HTTP/1.1" 200 36215
+[15/Mar/2026 19:35:14] "GET /media/products/diamond_necklace.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:35:14] "GET /media/products/tiny_jewels_bracelet.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:35:14] "GET /media/products/princess_pink_frock.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:35:14] "GET /media/products/floral_hair_band.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:35:14] "GET /media/products/gold_choker_set.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:35:14] "GET /media/products/chic_denim_skirt.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:35:14] "GET /media/products/party_gown_heavy.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:35:14] "GET /media/products/designer_kurti_set.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:35:21] "GET /products/?search=jawellery HTTP/1.1" 200 17660
+[15/Mar/2026 19:35:21] "GET /media/products/crystal_ring.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:35:21] "GET /media/products/silver_nose_pin.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:35:33] "GET /products/?search=childi HTTP/1.1" 200 10214
+[15/Mar/2026 19:35:39] "GET /products/?search=jewellery HTTP/1.1" 200 17660
+[15/Mar/2026 19:35:44] "GET /products/?search=women+collection HTTP/1.1" 200 10224
+[15/Mar/2026 19:35:49] "GET /products/?search=kids HTTP/1.1" 200 16086
+[15/Mar/2026 19:35:49] "GET /media/products/baby_cotton_frock.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:35:58] "GET /products/?search=makeup HTTP/1.1" 200 17663
+[15/Mar/2026 19:35:58] "GET /media/products/eyeshadow_palette_pro.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:35:58] "GET /media/products/velvet_foundation.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:35:58] "GET /media/products/intense_kajal.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:35:58] "GET /media/products/matte_nail_enamel.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:36:10] "GET /products/?search=western+collection HTTP/1.1" 200 16121
+[15/Mar/2026 19:36:10] "GET /media/products/floral_crop_top.jpg HTTP/1.1" 304 0
+Internal Server Error: /wishlist/
+Traceback (most recent call last):
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\shop\views.py", line 66, in wishlist_detail
+    return render(request, 'shop/wishlist.html', {'wishlist_items': wishlist_items})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shabb\OneDrive\Desktop\shopping_platform\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: shop/wishlist.html
+[15/Mar/2026 19:36:30] "GET /wishlist/ HTTP/1.1" 500 91960
+[15/Mar/2026 19:36:36] "GET /orders/cart/ HTTP/1.1" 200 7173
+[15/Mar/2026 19:36:39] "GET /products/ HTTP/1.1" 200 42704
+[15/Mar/2026 19:36:39] "GET /media/products/printed_kurti.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:36:42] "GET /orders/cart/add/2/ HTTP/1.1" 302 0
+[15/Mar/2026 19:36:42] "GET /orders/cart/ HTTP/1.1" 200 10462
+[15/Mar/2026 19:36:45] "GET /orders/checkout/ HTTP/1.1" 200 9351
+[15/Mar/2026 19:37:29] "POST /orders/checkout/ HTTP/1.1" 200 8453
+[15/Mar/2026 19:37:44] "GET /orders/checkout/ HTTP/1.1" 200 9163
+[15/Mar/2026 19:45:47] "GET / HTTP/1.1" 200 36561
+[15/Mar/2026 19:45:47] "GET /media/products/gown.png HTTP/1.1" 304 0
+[15/Mar/2026 19:45:47] "GET /media/products/party_gown_heavy.jpg HTTP/1.1" 304 0
+[15/Mar/2026 19:45:47] "GET /media/products/gold_choker_set.jpg HTTP/1.1" 304 0

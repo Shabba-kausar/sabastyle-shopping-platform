@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ product.name }} - SabaStyle Platform{% endblock %}
+
+{% block content %}
+<div class="row pt-4">
+    <div class="col-md-6 mb-4">
+        {% if product.image %}
+        <img src="{{ product.image.url }}" class="img-fluid rounded-4 shadow" alt="{{ product.name }}">
+        {% else %}
+        <div class="bg-light rounded-4 d-flex align-items-center justify-content-center" style="height: 500px;">No Image</div>
+        {% endif %}
+    </div>
+    <div class="col-md-6">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'shop:product_list' %}">Shop</a></li>
+                <li class="breadcrumb-item"><a href="{{ product.category.get_absolute_url }}">{{ product.category.name }}</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ product.name }}</li>
+            </ol>
+        </nav>
+        <h1 class="display-5 fw-bold mb-2">{{ product.name }}</h1>
+        <div class="d-flex align-items-center mb-3">
+            <div class="text-warning me-2 fs-5">
+                {% for i in "12345" %}
+                    <i class="bi {% if product.rating >= forloop.counter %}bi-star-fill{% else %}bi-star{% endif %}"></i>
+                {% endfor %}
+            </div>
+            <span class="text-muted">({{ product.rating }} Rating)</span>
+        </div>
+        <h2 class="text-pink fw-bold mb-4">₹{{ product.price }}</h2>
+        
+        <p class="fs-5 text-muted mb-4">{{ product.description }}</p>
+
+        <div class="d-grid gap-2 d-md-flex mt-5">
+            <a href="{% url 'orders:cart_add' product.id %}" class="btn btn-primary btn-lg px-5 py-3 rounded-pill">
+                <i class="bi bi-cart-plus me-2"></i> Add to Cart
+            </a>
+            <a href="{% url 'shop:wishlist_add' product.id %}" class="btn btn-outline-secondary btn-lg px-5 py-3 rounded-pill">
+                <i class="bi bi-heart me-2"></i> Wishlist
+            </a>
+        </div>
+
+        <div class="mt-5 pt-4 border-top">
+            <div class="row text-center">
+                <div class="col-4">
+                    <i class="bi bi-truck fs-3 text-pink"></i>
+                    <p class="small mt-2">Free Delivery</p>
+                </div>
+                <div class="col-4">
+                    <i class="bi bi-arrow-repeat fs-3 text-pink"></i>
+                    <p class="small mt-2">7 Days Return</p>
+                </div>
+                <div class="col-4">
+                    <i class="bi bi-shield-check fs-3 text-pink"></i>
+                    <p class="small mt-2">Secure Payment</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Create Account - SabaStyle Platform{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-5">
+        <div class="card shadow-lg p-5 rounded-4 bg-white border-0 mt-5">
+            <h2 class="text-center mb-4 fw-bold">Join Us</h2>
+            <p class="text-center text-muted mb-4">Experience the best of SabaStyle Platform</p>
+            <form method="post">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <button type="submit" class="btn btn-primary w-100 py-3 rounded-pill mt-3 shadow">Sign Up</button>
+            </form>
+            <div class="text-center mt-4">
+                <p class="text-muted">Already have an account? <a href="{% url 'accounts:login' %}" class="text-pink">Login</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

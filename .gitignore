@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+db.sqlite3
+media/
+.env
+.vscode/
+.idea/
+*.log
+static/images/personal_photo.png
+static/images/saba_kausar_photo.jpg
+brain/
+*.webp
+*.mp4

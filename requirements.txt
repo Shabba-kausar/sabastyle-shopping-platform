@@ -2,3 +2,8 @@ Django
 gunicorn
 whitenoise
 pillow
+django-crispy-forms
+crispy-bootstrap5
+django-bootstrap5
+dj-database-url
+python-dotenv
